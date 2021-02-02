@@ -1,16 +1,7 @@
-// console.log(__dirname)
+const os = require('os')
 
-// console.log("当前命令行：", process.cwd())
+console.log(os.arch())
 
-// setTimeout(() => {
-//   console.log("abc");
-// }, 1000);
+console.log(os.cpus().length)
 
-// process.exit();
-
-
-// console.log(process.argv);
-
-// console.log(process.platform);
-
-// console.log(process.env.PROCESSOR_REVISION);
+console.log(os.freemem()/1024**3)
